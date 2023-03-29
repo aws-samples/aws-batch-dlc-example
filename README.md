@@ -107,4 +107,5 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
+
 N.B.: Although this repository is released under the MIT-0 license, its Dockerfile uses the third party DeepLabCut project. The DeepLabCut project's licensing includes the LGPL-3.0 license.
