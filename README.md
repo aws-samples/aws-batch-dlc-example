@@ -36,7 +36,7 @@ The DeepLabCut tool, which is available as a docker image, requires to load the 
 To automate these steps, build a new image using the existing deeplabcut image as a basis. The new image retrieves at its launch, from a bucket in Amazon Simple Storage Service (S3), the analysis project data preloaded by the researcher in step 2 of this utility. It then trains the model, by invoking the native DeepLabCut functions. At the end of the execution, it exports the output parameters of the model to a bucket in S3.
 
 Use the `Dockerfile` to build the new container image. It extracts the deeplabcut base image, creates environment variables that are used by deeplabcut, and than it invokes the Python script `dlc-train.py` as entry point.
-The Python script extracts the labaled dataset from S3, and starts the training task.
+The Python script extracts the labeled dataset from S3, and starts the training task.
 It includes three functions:
 * `import_dlc_zip_project`: Imports a deeplabcut analysis project from S3 and extracts it inside the container.
 * `train_dlc_model`: Starts a training task by invoking native deeplabcut functions.
